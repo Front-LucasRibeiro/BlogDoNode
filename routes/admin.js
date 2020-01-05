@@ -8,7 +8,7 @@ Postagem = mongoose.model("postagens"),
 {eAdmin} = require('../helpers/eAdmin')
 
 router.get('/',eAdmin, (req, res) => {
-  res.render("admin/index")
+  res.render("/")
 })
 
 router.get('/categorias',eAdmin, (req, res) => {
